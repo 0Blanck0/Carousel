@@ -1,0 +1,97 @@
+html {
+  height: 80%;
+  width: 90%;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-wrapper {
+  text-align: center;
+}
+
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  width: 480px;
+  height: auto;
+  overflow: hidden;
+}
+
+.container {
+  transform: translateX(0px);
+  height: auto;
+  transition: transform 0s ease-in-out 0s;
+  margin: 0px;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.carousel_div {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.carousel_div_content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.flex_item {
+  flex: 1 1 auto;
+}
+
+.carousel_div.initial,
+.carousel_div.active {
+  opacity: 1;
+  position: relative;
+  z-index: 9;
+}
+
+.arrow {
+  position: relative;
+  opacity: 1;
+  color: black;
+  text-align: center;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+}
+
+.arrow img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.info_btn {
+  width: 60px;
+  height: 30px;
+}
+
+.indicator_container {
+  margin-left: 35px;
+}
+
+.indicator {
+  float: left;
+  cursor: pointer;
+}
